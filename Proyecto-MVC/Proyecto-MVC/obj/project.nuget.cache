@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OYA7sL+YHuUkfHdKFt6kwcQZYIVjBddD51H2s/GKOfECfZu3cy50c0tluIIry2auZVCtDuIeZuxADvMwUtC3hA==",
+  "dgSpecHash": "3s33afz28WiVn6m907yjPsaskpz52ib9Z9eGPi9sUx0IwPG545FgKYzrd4fg9JBNLf1MO4hoIG+YZ42O1P8C5Q==",
   "success": true,
-  "projectFilePath": "D:\\Fidelitas\\Programación Avanzada en Web\\Repos\\Proyecto-MVC\\Proyecto-MVC\\Proyecto-MVC.csproj",
+  "projectFilePath": "D:\\Fidelitas\\Programación Avanzada en Web\\Repos\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\Proyecto-MVC\\Proyecto-MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jdmat\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\jdmat\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

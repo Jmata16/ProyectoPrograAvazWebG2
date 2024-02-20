@@ -2018,11 +2018,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Fidelitas\\Programación Avanzada en Web\\Repos\\Proyecto-MVC\\Proyecto-MVC\\Proyecto-MVC.csproj",
+      "projectUniqueName": "D:\\Fidelitas\\Programación Avanzada en Web\\Repos\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\Proyecto-MVC\\Proyecto-MVC.csproj",
       "projectName": "Proyecto-MVC",
-      "projectPath": "D:\\Fidelitas\\Programación Avanzada en Web\\Repos\\Proyecto-MVC\\Proyecto-MVC\\Proyecto-MVC.csproj",
+      "projectPath": "D:\\Fidelitas\\Programación Avanzada en Web\\Repos\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\Proyecto-MVC\\Proyecto-MVC.csproj",
       "packagesPath": "C:\\Users\\jdmat\\.nuget\\packages\\",
-      "outputPath": "D:\\Fidelitas\\Programación Avanzada en Web\\Repos\\Proyecto-MVC\\Proyecto-MVC\\obj\\",
+      "outputPath": "D:\\Fidelitas\\Programación Avanzada en Web\\Repos\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\Proyecto-MVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jdmat\\AppData\\Roaming\\NuGet\\NuGet.Config",
