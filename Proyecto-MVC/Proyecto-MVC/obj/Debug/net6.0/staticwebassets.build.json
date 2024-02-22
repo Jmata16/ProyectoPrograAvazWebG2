@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TRUhY+KxlyO1YTitKkWjk6IvErcobWk44ErgS0knqL4=",
+  "Hash": "4HXcCCuRKxBIcQRMn1m6QTz9/x5fCViGHt4Enc0I45A=",
   "Source": "Proyecto-MVC",
   "BasePath": "_content/Proyecto-MVC",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
+    },
+    {
+      "Identity": "D:\\Fidelitas\\Programación Avanzada en Web\\Repos\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\Proyecto-MVC\\wwwroot\\css\\Login.css",
+      "SourceId": "Proyecto-MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Fidelitas\\Programación Avanzada en Web\\Repos\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\Proyecto-MVC\\wwwroot\\",
+      "BasePath": "_content/Proyecto-MVC",
+      "RelativePath": "css/Login.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Login.css"
     },
     {
       "Identity": "D:\\Fidelitas\\Programación Avanzada en Web\\Repos\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\Proyecto-MVC\\wwwroot\\css\\site.css",
