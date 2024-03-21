@@ -869,6 +869,19 @@
             "rid": "win"
           }
         }
+      },
+      "ProyectoModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.27"
+        },
+        "compile": {
+          "bin/placeholder/ProyectoModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProyectoModels.dll": {}
+        }
       }
     }
   },
@@ -2428,6 +2441,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "ProyectoModels/1.0.0": {
+      "type": "project",
+      "path": "../ProyectoModels/ProyectoModels.csproj",
+      "msbuildProject": "../ProyectoModels/ProyectoModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2436,6 +2454,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 6.0.27",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.27",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.27",
+      "ProyectoModels >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -2465,7 +2484,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Fidelitas\\Programación Avanzada en Web\\Repos\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\ProyectoModels\\ProyectoModels.csproj": {
+              "projectPath": "D:\\Fidelitas\\Programación Avanzada en Web\\Repos\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\ProyectoModels\\ProyectoModels.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

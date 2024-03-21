@@ -21,4 +21,8 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Core" Version="6.0.16" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ProyectoModels\ProyectoModels.csproj" />
+  </ItemGroup>
+
 </Project>
