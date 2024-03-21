@@ -6,22 +6,22 @@ GO
 
 -- Tablas sin claves foráneas
 CREATE TABLE Roles (
-    ID INT PRIMARY KEY,
+    ID INT PRIMARY KEY IDENTITY,
     Nombre NVARCHAR(100)
 );
 
 CREATE TABLE Categorias (
-    ID INT PRIMARY KEY,
+    ID INT PRIMARY KEY IDENTITY,
     Nombre NVARCHAR(100)
 );
 
 CREATE TABLE Marcas (
-    ID INT PRIMARY KEY,
+    ID INT PRIMARY KEY IDENTITY,
     Nombre NVARCHAR(100)
 );
 
 CREATE TABLE UbicacionesTiendas (
-    ID INT PRIMARY KEY,
+    ID INT PRIMARY KEY IDENTITY,
     Nombre NVARCHAR(100),
     Direccion NVARCHAR(255),
     Ciudad NVARCHAR(100),
@@ -34,11 +34,12 @@ CREATE TABLE Usuarios (
     Nombre NVARCHAR(100),
     CorreoElectronico NVARCHAR(255),
     Contraseña NVARCHAR(255),
-    Rol_ID INT
+    Rol_ID INT,
+    FOREIGN KEY (Rol_ID) REFERENCES Roles(ID)
 );
 
 CREATE TABLE Productos (
-    ID INT PRIMARY KEY,
+    ID INT PRIMARY KEY IDENTITY,
     Nombre NVARCHAR(100),
     Descripcion NVARCHAR(MAX),
     Precio DECIMAL(10, 2),
@@ -49,14 +50,14 @@ CREATE TABLE Productos (
 );
 
 CREATE TABLE Descuentos (
-    ID INT PRIMARY KEY,
+    ID INT PRIMARY KEY IDENTITY,
     Producto_ID INT,
     Descuento DECIMAL(5, 2),
     FOREIGN KEY (Producto_ID) REFERENCES Productos(ID)
 );
 
 CREATE TABLE Facturas (
-    ID INT PRIMARY KEY,
+    ID INT PRIMARY KEY IDENTITY,
     Usuario_ID INT,
     Fecha DATETIME,
     Total DECIMAL(10, 2),
@@ -64,7 +65,7 @@ CREATE TABLE Facturas (
 );
 
 CREATE TABLE Carrito (
-    ID INT PRIMARY KEY,
+    ID INT PRIMARY KEY IDENTITY,
     Usuario_ID INT,
     Producto_ID INT,
     Cantidad INT,
@@ -75,18 +76,23 @@ CREATE TABLE Carrito (
 );
 
 CREATE TABLE ListaDeseos (
-    ID INT PRIMARY KEY,
+    ID INT PRIMARY KEY IDENTITY,
     Usuario_ID INT,
     Producto_ID INT,
     FOREIGN KEY (Usuario_ID) REFERENCES Usuarios(ID),
     FOREIGN KEY (Producto_ID) REFERENCES Productos(ID)
 );
 
--- Insertar el rol 
-INSERT INTO Roles (ID, Nombre) VALUES (1, 'Admin');
 
-INSERT INTO Roles (ID, Nombre) VALUES (2, 'Cliente');
+-- Insertar un nuevo rol
+INSERT INTO Roles (Nombre)
+VALUES ('Admin');
+
+INSERT INTO Roles (Nombre)
+VALUES ('Cliente');
+
 
 -- Insertar un usuario administrador
 INSERT INTO Usuarios (Nombre, CorreoElectronico, Contraseña, Rol_ID)
 VALUES ('Admin', 'admin@example.com', 'Admin123', 1);
+
