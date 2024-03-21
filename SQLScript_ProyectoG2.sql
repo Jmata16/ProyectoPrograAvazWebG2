@@ -30,12 +30,11 @@ CREATE TABLE UbicacionesTiendas (
 
 -- Tablas 
 CREATE TABLE Usuarios (
-    ID INT PRIMARY KEY,
+    ID INT PRIMARY KEY IDENTITY,
     Nombre NVARCHAR(100),
     CorreoElectronico NVARCHAR(255),
     Contraseña NVARCHAR(255),
-    Rol_ID INT,
-    FOREIGN KEY (Rol_ID) REFERENCES Roles(ID)
+    Rol_ID INT
 );
 
 CREATE TABLE Productos (
@@ -82,3 +81,12 @@ CREATE TABLE ListaDeseos (
     FOREIGN KEY (Usuario_ID) REFERENCES Usuarios(ID),
     FOREIGN KEY (Producto_ID) REFERENCES Productos(ID)
 );
+
+-- Insertar el rol 
+INSERT INTO Roles (ID, Nombre) VALUES (1, 'Admin');
+
+INSERT INTO Roles (ID, Nombre) VALUES (2, 'Cliente');
+
+-- Insertar un usuario administrador
+INSERT INTO Usuarios (Nombre, CorreoElectronico, Contraseña, Rol_ID)
+VALUES ('Admin', 'admin@example.com', 'Admin123', 1);
