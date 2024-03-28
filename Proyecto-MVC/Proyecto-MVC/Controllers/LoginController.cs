@@ -1,11 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using ProyectoModels;
-using IPracticaProgramada_JoseMataAPI.Data;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
+using System;
+using System.Net;
 
 namespace Proyecto_MVC.Controllers
 {
@@ -31,43 +33,42 @@ namespace Proyecto_MVC.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    var usuario = new Usuarios(); // Crear una nueva instancia del modelo Usuarios
+                    var usuario = new Usuarios(); 
 
-                    // Asignar valores a las propiedades del modelo desde el formulario
+                   
                     usuario.Nombre = Request.Form["Nombre"];
                     usuario.CorreoElectronico = Request.Form["CorreoElectronico"];
                     usuario.Contraseña = Request.Form["Contraseña"];
-                    usuario.Rol_ID = 2; // Puedes establecer un valor predeterminado aquí o en el modelo
+                    usuario.Rol_ID = 2; 
 
                     var httpClient = _httpClientFactory.CreateClient();
 
-                    // URL de tu API para registrar un usuario
+                    
                     var url = "https://localhost:7076/api/Usuarios";
 
-                    // Serializar el objeto usuario a JSON
+
                     var jsonUsuario = JsonSerializer.Serialize(usuario);
 
-                    // Configurar el contenido de la solicitud HTTP
                     var content = new StringContent(jsonUsuario, Encoding.UTF8, "application/json");
 
-                    // Enviar la solicitud POST a la API
+
                     var response = await httpClient.PostAsync(url, content);
 
-                    // Verificar si la solicitud fue exitosa
+   
                     if (response.IsSuccessStatusCode)
                     {
-                        return RedirectToAction(nameof(Login)); // Redireccionar al login después de registrar el usuario
+                        return RedirectToAction(nameof(Login)); 
                     }
                     else
                     {
-                        // Manejar el error de la API si es necesario
+
                         ModelState.AddModelError(string.Empty, "Error al registrar el usuario.");
                     }
                 }
             }
             catch (Exception ex)
             {
-                // Manejar cualquier error inesperado
+
                 ModelState.AddModelError(string.Empty, $"Error: {ex.Message}");
             }
 
@@ -78,5 +79,55 @@ namespace Proyecto_MVC.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login(string correoElectronico, string contraseña)
+        {
+            try
+            {
+                if (string.IsNullOrWhiteSpace(correoElectronico) || string.IsNullOrWhiteSpace(contraseña))
+                {
+                    ModelState.AddModelError(string.Empty, "Por favor, ingrese su correo electrónico y contraseña.");
+                    return View();
+                }
+
+                var httpClient = _httpClientFactory.CreateClient();
+                var url = $"https://localhost:7076/api/Login?correoElectronico={correoElectronico}&contraseña={contraseña}";
+
+                var response = await httpClient.PostAsync(url, null);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+                else if (response.StatusCode == HttpStatusCode.NotFound)
+                {
+                    ModelState.AddModelError(string.Empty, "El usuario no existe.");
+                }
+                else if (response.StatusCode == HttpStatusCode.Unauthorized)
+                {
+                    ModelState.AddModelError(string.Empty, "La contraseña es incorrecta.");
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "Error en el inicio de sesión. Por favor, inténtelo de nuevo más tarde.");
+                }
+            }
+            catch (HttpRequestException ex)
+            {
+                ModelState.AddModelError(string.Empty, $"Error de comunicación con el servidor: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError(string.Empty, $"Error inesperado: {ex.Message}");
+            }
+
+
+            return View();
+        }
+
+
+
     }
 }
