@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ProyectoModels;
 
-namespace IPracticaProgramada_JoseMataAPI.Data
+namespace ProyectyoG2.Data
 {
     public class ProyectoContext : DbContext
     {

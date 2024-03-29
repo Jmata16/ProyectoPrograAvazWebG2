@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using ProyectoModels;
-using IPracticaProgramada_JoseMataAPI.Data;
+using ProyectyoG2.Data;
 
 namespace Proyecto_API.Controllers
 {
