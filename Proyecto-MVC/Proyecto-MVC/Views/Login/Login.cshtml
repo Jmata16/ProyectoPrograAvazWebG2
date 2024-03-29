@@ -1,155 +1,145 @@
-﻿@*
-*@
-@{
-}
+﻿@model ProyectoModels.Usuarios
 
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>@ViewData["Title"]</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="format-detection" content="telephone=no">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="author" content="">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
-	<link rel="stylesheet" type="text/css" href="~/css/Login.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar Sesión</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="~/css/Login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-
-
 <body>
-	<div id="container" class="container">
-		<!-- FORM SECTION -->
-		<div class="row">
-			<!-- SIGN UP -->
-			<div class="col align-items-center flex-col sign-up">
-				<div class="form-wrapper align-items-center">
-					<div class="form sign-up">
-						<div class="input-group">
-							<i class='bx bxs-user'></i>
-							<input type="text" placeholder="Nombre">
-						</div>
-						<div class="input-group">
-							<i class='bx bx-mail-send'></i>
-							<input type="email" placeholder="Apellidos">
-						</div>
-						<div class="input-group">
-							<i class='bx bxs-user'></i>
-							<input type="text" placeholder="Usuario">
-						</div>
-						<div class="input-group">
-							<i class='bx bx-mail-send'></i>
-							<input type="email" placeholder="Correo electrónico">
-						</div>
-						<div class="input-group">
-							<i class='bx bxs-lock-alt'></i>
-							<input type="password" placeholder="Contraseña">
-						</div>
-						<div class="input-group">
-							<i class='bx bxs-lock-alt'></i>
-							<input type="password" placeholder="Confirmar Contraseña">
-						</div>
-						<button>
-							Registrarse 
-						</button>
-						<p>
-							<span>
-								¿Ya tienes cuenta?
-							</span>
-							<b onclick="toggle()" class="pointer">
-								Acceda aquí
-							</b>
-						</p>
-					</div>
-				</div>
+    <div id="container" class="container">
+        <!-- FORM SECTION -->
+        <div class="row">
+            <!-- SIGN UP -->
+            <div class="col align-items-center flex-col sign-up">
+                <div class="form-wrapper align-items-center">
+                    <div class="form sign-up">
+                        <form asp-action="Registro" method="post">
+                            <div class="input-group">
+                                <i class='bx bxs-user'></i>
+                                <input asp-for="Nombre" type="text" placeholder="Nombre">
+                            </div>
+                            <div class="input-group">
+                                <i class='bx bx-mail-send'></i>
+                                <input asp-for="CorreoElectronico" type="email" placeholder="Correo electrónico">
+                            </div>
+                            <div class="input-group">
+                                <i class='bx bxs-lock-alt'></i>
+                                <input asp-for="Contraseña" type="password" placeholder="Contraseña">
+                            </div>
+                            <div class="input-group">
+                                <i class='bx bxs-lock-alt'></i>
+                                <input asp-for="Rol_ID" type="hidden" value="2">
+                            </div>
+                            <button type="submit">Registrarse</button>
 
-			</div>
-			<!-- END SIGN UP -->
-			<!-- SIGN IN -->
-			<div class="col align-items-center flex-col sign-in">
-				<div class="form-wrapper align-items-center">
-					<div class="form sign-in">
-						<div class="input-group">
-							<i class='bx bxs-user'></i>
-							<input type="text" placeholder="Correo electrónico">
-						</div>
-						<div class="input-group">
-							<i class='bx bxs-lock-alt'></i>
-							<input type="password" placeholder="Contraseña">
-						</div>
-						<button>
-							Sign in
-						</button>
-						<p>
-							<b>
-								¿Olvidaste tu contraseña?
-							</b>
-						</p>
-						<p>
-							<span>
-								¿No tienes cuenta?
-							</span>
-							<b onclick="toggle()" class="pointer">
-								Regístrate acá
-							</b>
-						</p>
-					</div>
-				</div>
-				<div class="form-wrapper">
-				</div>
-			</div>
-			<!-- END SIGN IN -->
-		</div>
-		<!-- END FORM SECTION -->
-		<!-- CONTENT SECTION -->
-		<div class="row content-row">
-			<!-- SIGN IN CONTENT -->
-			<div class="col align-items-center flex-col">
-				<div class="text sign-in">
-					<h2>
-						Bienvenido/a
-					</h2>
-
-				</div>
-				<div class="img sign-in">
-				</div>
-			</div>
-			<!-- END SIGN IN CONTENT -->
-			<!-- SIGN UP CONTENT -->
-			<div class="col align-items-center flex-col">
-				<div class="img sign-up">
-				</div>
-				<div class="text sign-up">
-					<h2>
-						Regístrate acá
-					</h2>
-
-				</div>
-			</div>
-			<!-- END SIGN UP CONTENT -->
-		</div>
-		<!-- END CONTENT SECTION -->
-	</div>
+                        </form>
+                        <p>
+                            <span>¿Ya tienes cuenta?</span>
+                            <b onclick="toggle()" class="pointer">Acceda aquí</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- END SIGN UP -->
+            <!-- SIGN IN -->
+            <div class="col align-items-center flex-col sign-in">
+                <div class="form-wrapper align-items-center">
+                    <div class="form sign-in">
+                        <form asp-action="Login" method="post" onsubmit="return validateLoginForm()">
+                            <div class="input-group">
+                                <i class='bx bxs-user'></i>
+                                <input asp-for="CorreoElectronico" type="text" placeholder="Correo electrónico">
+                            </div>
+                            <div class="input-group">
+                                <i class='bx bxs-lock-alt'></i>
+                                <input asp-for="Contraseña" type="password" placeholder="Contraseña">
+                            </div>
+                            <button type="submit">Iniciar Sesión</button>
+                        </form>
+                        <p><b>¿Olvidaste tu contraseña?</b></p>
+                        <p><span>¿No tienes cuenta?</span><b onclick="toggle()" class="pointer">Regístrate acá</b></p>
+                    </div>
+                </div>
+                <br />
+                <br />
+                <div class="form-wrapper">
+                    @if (!ViewData.ModelState.IsValid)
+                    {
+                        <div>
+                            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                            {
+                                <p>@error.ErrorMessage</p>
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
+            <!-- END SIGN IN -->
+        </div>
+        <!-- END FORM SECTION -->
+        <!-- CONTENT SECTION -->
+        <div class="row content-row">
+            <!-- SIGN IN CONTENT -->
+            <div class="col align-items-center flex-col">
+                <div class="text sign-in">
+                    <h2>Bienvenido/a</h2>
+                </div>
+                <div class="img sign-in"></div>
+            </div>
+            <!-- END SIGN IN CONTENT -->
+            <!-- SIGN UP CONTENT -->
+            <div class="col align-items-center flex-col">
+                <div class="img sign-up"></div>
+                <div class="text sign-up">
+                    <h2>Regístrate acá</h2>
+                </div>
+            </div>
+            <!-- END SIGN UP CONTENT -->
+        </div>
+        <!-- END CONTENT SECTION -->
+    </div>
 
     <script>
-
-        let container = document.getElementById('container')
-
+        let container = document.getElementById('container');
         toggle = () => {
-            container.classList.toggle('sign-in')
-            container.classList.toggle('sign-up')
+            container.classList.toggle('sign-in');
+            container.classList.toggle('sign-up');
+        }
+        setTimeout(() => {
+            container.classList.add('sign-in');
+        }, 200);
+
+        function validateLoginForm() {
+            var email = document.getElementById('CorreoElectronico').value;
+            var password = document.getElementById('Contraseña').value;
+
+            if (email.trim() === '' || password.trim() === '') {
+                mostrarMensajeError('Por favor, ingrese su correo electrónico y contraseña.');
+                return false; // Evitar que se envíe el formulario si faltan campos
+            }
+
+            return true; // Permitir el envío del formulario si todos los campos están completos
         }
 
-        setTimeout(() => {
-            container.classList.add('sign-in')
-        }, 200)
+        function mostrarMensajeError(mensaje) {
+            var errorMessageElement = document.getElementById("error-message");
+            errorMessageElement.innerText = mensaje;
+            errorMessageElement.style.display = "block";
+        }
     </script>
 </body>
 </html>
