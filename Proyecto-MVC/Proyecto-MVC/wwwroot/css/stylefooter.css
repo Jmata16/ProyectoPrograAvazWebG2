@@ -23,9 +23,12 @@ ul{
   background-color: #24262b;
     padding: 70px 0;
 }
-.footer-col{
-   width: 25%;
-   padding: 0 15px;
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-spacer {
+    margin-bottom: 50px;
 }
 .footer-col h4{
   font-size: 18px;

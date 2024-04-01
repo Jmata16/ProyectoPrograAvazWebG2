@@ -13,3 +13,18 @@ D:\Fidelitas\Programación Avanzada en Web\Repos\ProyectoPrograAvazWebG2\Proyect
 D:\Fidelitas\Programación Avanzada en Web\Repos\ProyectoPrograAvazWebG2\Proyecto-MVC\ProyectoModels\obj\Debug\net6.0\ProyectoModels.pdb
 D:\Fidelitas\Programación Avanzada en Web\Repos\ProyectoPrograAvazWebG2\Proyecto-MVC\ProyectoModels\obj\Debug\net6.0\ProyectoModels.genruntimeconfig.cache
 D:\Fidelitas\Programación Avanzada en Web\Repos\ProyectoPrograAvazWebG2\Proyecto-MVC\ProyectoModels\obj\Debug\net6.0\ref\ProyectoModels.dll
+C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\ProyectoModels\bin\Debug\net6.0\ProyectoModels.deps.json
+C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\ProyectoModels\bin\Debug\net6.0\ProyectoModels.runtimeconfig.json
+C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\ProyectoModels\bin\Debug\net6.0\ProyectoModels.dll
+C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\ProyectoModels\bin\Debug\net6.0\ProyectoModels.pdb
+C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\ProyectoModels\obj\Debug\net6.0\ProyectoModels.csproj.AssemblyReference.cache
+C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\ProyectoModels\obj\Debug\net6.0\ProyectoModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\ProyectoModels\obj\Debug\net6.0\ProyectoModels.AssemblyInfoInputs.cache
+C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\ProyectoModels\obj\Debug\net6.0\ProyectoModels.AssemblyInfo.cs
+C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\ProyectoModels\obj\Debug\net6.0\ProyectoModels.csproj.CoreCompileInputs.cache
+C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\ProyectoModels\obj\Debug\net6.0\ProyectoModels.sourcelink.json
+C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\ProyectoModels\obj\Debug\net6.0\ProyectoModels.dll
+C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\ProyectoModels\obj\Debug\net6.0\refint\ProyectoModels.dll
+C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\ProyectoModels\obj\Debug\net6.0\ProyectoModels.pdb
+C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\ProyectoModels\obj\Debug\net6.0\ProyectoModels.genruntimeconfig.cache
+C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\ProyectoModels\obj\Debug\net6.0\ref\ProyectoModels.dll
