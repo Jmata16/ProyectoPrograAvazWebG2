@@ -1,0 +1,41 @@
+﻿@model List<ProyectoModels.Producto>
+
+@{
+    Layout = "_Layout";
+}
+
+<h1 class="text-center">Lista de Productos</h1>
+
+<div class="text-center mb-3">
+    <a asp-action="Create" class="btn btn-primary">Crear Nuevo Producto</a>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-striped table-hover">
+        <thead class="bg-primary text-light">
+            <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Descripción</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Nombre</td>
+                    <td>@item.Precio</td>
+                    <td>@item.Descripcion</td>
+                    <td>
+                        <div class="btn-group" role="group" aria-label="Acciones">
+                            <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-outline-primary">Editar</a>
+                            <a asp-action="Details" asp-route-id="@item.ID" class="btn btn-outline-info">Detalles</a>
+                            <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-outline-danger">Eliminar</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

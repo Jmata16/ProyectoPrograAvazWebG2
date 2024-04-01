@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Detalles del Producto</title>
+</head>
+<body>
+
+    <div>
+        <h4>Detalles del Producto</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">Nombre</dt>
+            <dd class="col-sm-10">@Model.Nombre</dd>
+            <dt class="col-sm-2">Precio</dt>
+            <dd class="col-sm-10">@Model.Precio</dd>
+            <dt class="col-sm-2">Descripción</dt>
+            <dd class="col-sm-10">@Model.Descripcion</dd>
+        </dl>
+    </div>
+
+    <div>
+        <a asp-action="Index">Volver al Listado</a>
+    </div>
+
+</body>
+</html>

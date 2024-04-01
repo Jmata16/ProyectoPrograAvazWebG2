@@ -1,0 +1,55 @@
+﻿@model ProyectoModels.Producto
+<!DOCTYPE html>
+<html>
+@Html.Partial("_header")
+<body >
+    <br />
+    <br />
+    <br />
+
+    
+        <form asp-action="Create">
+            <div class="form-group">
+                <label asp-for="Nombre" class="control-label"></label>
+                <input asp-for="Nombre" class="form-control" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Descripcion" class="control-label"></label>
+                <textarea asp-for="Descripcion" class="form-control"></textarea>
+                <span asp-validation-for="Descripcion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Precio" class="control-label"></label>
+                <input asp-for="Precio" class="form-control" />
+                <span asp-validation-for="Precio" class="text-danger"></span>
+            </div>
+            @*  <div class="form-group">
+            <label asp-for="Categoria" class="control-label"></label>
+            <input asp-for="Categoria" class="form-control" />
+            <span asp-validation-for="Categoria" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+            <label asp-for="Marca" class="control-label"></label>
+            <input asp-for="Marca" class="form-control" />
+            <span asp-validation-for="Marca" class="text-danger"></span>
+            </div> *@
+
+            <div class="form-group">
+                <input type="submit" value="Guardar" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+            </div>
+        </form>
+        @Html.Partial("_footer")
+        @* <script src="js/jquery-1.11.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="~/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="~/js/plugins.js"></script>
+        <script type="text/javascript" src="~/js/script.js"></script> *@
+</body>
+</html>
+
+
+
