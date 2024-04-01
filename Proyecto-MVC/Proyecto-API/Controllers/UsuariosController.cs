@@ -1,4 +1,4 @@
-﻿using IPracticaProgramada_JoseMataAPI.Data;
+﻿using ProyectyoG2.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;

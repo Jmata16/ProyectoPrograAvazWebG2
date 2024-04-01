@@ -1,4 +1,4 @@
-using IPracticaProgramada_JoseMataAPI.Data;
+using ProyectyoG2.Data;
 using Microsoft.EntityFrameworkCore;
 using System;
 

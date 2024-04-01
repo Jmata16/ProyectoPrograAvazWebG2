@@ -1,7 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ProyectoModels;
+using System.Text.RegularExpressions;
 
-namespace IPracticaProgramada_JoseMataAPI.Data
+namespace ProyectyoG2.Data
 {
     public class ProyectoContext : DbContext
     {
@@ -12,6 +13,10 @@ namespace IPracticaProgramada_JoseMataAPI.Data
 
         public DbSet<Rol> Rol { get; set; }
         public DbSet<Usuarios> Usuarios { get; set; }
+        public DbSet<Producto> Productos { get; set; }
+  
+
+
 
     }
 }

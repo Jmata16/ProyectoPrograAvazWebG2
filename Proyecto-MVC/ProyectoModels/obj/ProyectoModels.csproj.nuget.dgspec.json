@@ -1,27 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Fidelitas\\Programación Avanzada en Web\\Repos\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\ProyectoModels\\ProyectoModels.csproj": {}
+    "C:\\Users\\maric\\Documents\\GitHub\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\ProyectoModels\\ProyectoModels.csproj": {}
   },
   "projects": {
-    "D:\\Fidelitas\\Programación Avanzada en Web\\Repos\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\ProyectoModels\\ProyectoModels.csproj": {
+    "C:\\Users\\maric\\Documents\\GitHub\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\ProyectoModels\\ProyectoModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Fidelitas\\Programación Avanzada en Web\\Repos\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\ProyectoModels\\ProyectoModels.csproj",
+        "projectUniqueName": "C:\\Users\\maric\\Documents\\GitHub\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\ProyectoModels\\ProyectoModels.csproj",
         "projectName": "ProyectoModels",
-        "projectPath": "D:\\Fidelitas\\Programación Avanzada en Web\\Repos\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\ProyectoModels\\ProyectoModels.csproj",
-        "packagesPath": "C:\\Users\\jdmat\\.nuget\\packages\\",
-        "outputPath": "D:\\Fidelitas\\Programación Avanzada en Web\\Repos\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\ProyectoModels\\obj\\",
+        "projectPath": "C:\\Users\\maric\\Documents\\GitHub\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\ProyectoModels\\ProyectoModels.csproj",
+        "packagesPath": "C:\\Users\\maric\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maric\\Documents\\GitHub\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\ProyectoModels\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\jdmat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maric\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,6 +44,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -67,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
