@@ -1,0 +1,98 @@
+﻿@model List<ProyectoModels.Producto>
+
+@{
+    ViewData["Title"] = "Products";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ministore</title>
+    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="~/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="~/js/modernizr.js"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+    @Html.Partial("_header")
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-3">
+                <a asp-action="Create" class="btn btn-primary">
+                    <i class="fas fa-plus"></i> 
+                </a>
+            </div>
+            <div class="col-md-6 text-center">
+                <h1>Listado de Productos</h1>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+    <br/>
+    <br />
+    <div class="container">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <img src="~/images/cart-item1.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">@item.Nombre</h5>
+                            <p class="card-text">@item.Descripcion</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Precio: $@item.Precio</li>
+                        </ul>
+                        <div class="card-body text-center">
+                            
+                            <div class="btn-group" role="group" aria-label="Acciones">
+                                
+                                <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-outline-primary">
+                                    <i class="fas fa-edit"></i> 
+                                </a>
+                                <a asp-action="Details" asp-route-id="@item.ID" class="btn btn-outline-info">
+                                    <i class="fas fa-info-circle"></i> 
+                                </a>
+                                <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-outline-danger">
+                                    <i class="fas fa-trash-alt"></i> 
+                                </a>
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
+                
+            }
+        </div>
+    </div>
+    @Html.Partial("_footer")
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="~/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="~/js/plugins.js"></script>
+    <script type="text/javascript" src="~/js/script.js"></script>
+</body>
+</html>
+
+
+

@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\maric\\Documents\\GitHub\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\",
+<<<<<<< Updated upstream
   "Documents": [],
+=======
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E79F1270-28D0-49DE-B955-48949480CF1D}|Proyecto-MVC\\Proyecto-MVC.csproj|c:\\users\\maric\\documents\\github\\proyectoprograavazwebg2\\proyecto-mvc\\proyecto-mvc\\views\\producto\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E79F1270-28D0-49DE-B955-48949480CF1D}|Proyecto-MVC\\Proyecto-MVC.csproj|solutionrelative:proyecto-mvc\\views\\producto\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E79F1270-28D0-49DE-B955-48949480CF1D}|Proyecto-MVC\\Proyecto-MVC.csproj|c:\\users\\maric\\documents\\github\\proyectoprograavazwebg2\\proyecto-mvc\\proyecto-mvc\\views\\producto\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E79F1270-28D0-49DE-B955-48949480CF1D}|Proyecto-MVC\\Proyecto-MVC.csproj|solutionrelative:proyecto-mvc\\views\\producto\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E79F1270-28D0-49DE-B955-48949480CF1D}|Proyecto-MVC\\Proyecto-MVC.csproj|c:\\users\\maric\\documents\\github\\proyectoprograavazwebg2\\proyecto-mvc\\proyecto-mvc\\views\\producto\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E79F1270-28D0-49DE-B955-48949480CF1D}|Proyecto-MVC\\Proyecto-MVC.csproj|solutionrelative:proyecto-mvc\\views\\producto\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E79F1270-28D0-49DE-B955-48949480CF1D}|Proyecto-MVC\\Proyecto-MVC.csproj|c:\\users\\maric\\documents\\github\\proyectoprograavazwebg2\\proyecto-mvc\\proyecto-mvc\\views\\producto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E79F1270-28D0-49DE-B955-48949480CF1D}|Proyecto-MVC\\Proyecto-MVC.csproj|solutionrelative:proyecto-mvc\\views\\producto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+>>>>>>> Stashed changes
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -34,6 +55,61 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+<<<<<<< Updated upstream
+=======
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\maric\\Documents\\GitHub\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\Proyecto-MVC\\Views\\Producto\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Proyecto-MVC\\Views\\Producto\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\maric\\Documents\\GitHub\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\Proyecto-MVC\\Views\\Producto\\Delete.cshtml",
+              "RelativeToolTip": "Proyecto-MVC\\Views\\Producto\\Delete.cshtml",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAmwF0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-01T20:15:39.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\maric\\Documents\\GitHub\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\Proyecto-MVC\\Views\\Producto\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Proyecto-MVC\\Views\\Producto\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\maric\\Documents\\GitHub\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\Proyecto-MVC\\Views\\Producto\\Edit.cshtml",
+              "RelativeToolTip": "Proyecto-MVC\\Views\\Producto\\Edit.cshtml",
+              "ViewState": "AQIAADsAAAAAAAAAAAAmwDAAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-01T20:13:49.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\maric\\Documents\\GitHub\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\Proyecto-MVC\\Views\\Producto\\Index.cshtml",
+              "RelativeDocumentMoniker": "Proyecto-MVC\\Views\\Producto\\Index.cshtml",
+              "ToolTip": "C:\\Users\\maric\\Documents\\GitHub\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\Proyecto-MVC\\Views\\Producto\\Index.cshtml",
+              "RelativeToolTip": "Proyecto-MVC\\Views\\Producto\\Index.cshtml",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAF4AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-01T20:08:28.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\maric\\Documents\\GitHub\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\Proyecto-MVC\\Views\\Producto\\Create.cshtml",
+              "RelativeDocumentMoniker": "Proyecto-MVC\\Views\\Producto\\Create.cshtml",
+              "ToolTip": "C:\\Users\\maric\\Documents\\GitHub\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\Proyecto-MVC\\Views\\Producto\\Create.cshtml",
+              "RelativeToolTip": "Proyecto-MVC\\Views\\Producto\\Create.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAswCwAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-01T19:57:37.731Z",
+              "EditorCaption": ""
+>>>>>>> Stashed changes
             }
           ]
         },
