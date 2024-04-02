@@ -1,0 +1,64 @@
+﻿@*
+**********************************************************************************************
+**********************************************************************************************
+Esta es una pagina de error, el registrar esta junto al login en la clase llamada Login.cshtml
+**********************************************************************************************
+**********************************************************************************************
+ *@
+
+
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .error-container {
+            text-align: center;
+        }
+
+        .error-message {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .error-details {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .btn-back {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+            .btn-back:hover {
+                background-color: #45a049;
+            }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-details">Ha surgido un error inesperado.</div>
+        <div class="error-details">Puede que el correo electrónico que ingresaste esta ya registrado.</div>
+        <button class="btn-back" onclick="window.history.back()">Volver</button>
+    </div>
+</body>
+</html>

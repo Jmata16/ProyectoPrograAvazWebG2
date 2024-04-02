@@ -27,6 +27,13 @@ namespace Proyecto_API.Controllers
                 return BadRequest(ModelState);
             }
 
+            
+            var existingUser = _context.Usuarios.FirstOrDefault(u => u.CorreoElectronico == usuarios.CorreoElectronico);
+            if (existingUser != null)
+            {
+                return Conflict("Ya existe un usuario con este correo electrónico.");
+            }
+
             usuarios.Rol_ID = 2;
 
             try
@@ -41,6 +48,7 @@ namespace Proyecto_API.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }
+
         [HttpGet("{id}")]
         public ActionResult<Usuarios> GetUsuario(int id)
         {
