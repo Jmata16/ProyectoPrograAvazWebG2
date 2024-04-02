@@ -6,7 +6,11 @@
     <title>@ViewData["Title"]</title>
 </head>
 <body>
-    
+    @if (!string.IsNullOrWhiteSpace(ViewBag.CorreoElectronico))
+    {
+        <p>Correo electrónico utilizado: @ViewBag.CorreoElectronico</p>
+    }
+
             @RenderBody()
 </body>
 </html>

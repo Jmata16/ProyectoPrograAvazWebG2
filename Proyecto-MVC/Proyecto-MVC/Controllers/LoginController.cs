@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
 using System;
 using System.Net;
+using System.Security.Claims;
 
 namespace Proyecto_MVC.Controllers
 {
@@ -33,17 +34,17 @@ namespace Proyecto_MVC.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    var usuario = new Usuarios(); 
+                    var usuario = new Usuarios();
 
-                   
+
                     usuario.Nombre = Request.Form["Nombre"];
                     usuario.CorreoElectronico = Request.Form["CorreoElectronico"];
                     usuario.Contraseña = Request.Form["Contraseña"];
-                    usuario.Rol_ID = 2; 
+                    usuario.Rol_ID = 2;
 
                     var httpClient = _httpClientFactory.CreateClient();
 
-                    
+
                     var url = "https://localhost:7076/api/Usuarios";
 
 
@@ -54,10 +55,10 @@ namespace Proyecto_MVC.Controllers
 
                     var response = await httpClient.PostAsync(url, content);
 
-   
+
                     if (response.IsSuccessStatusCode)
                     {
-                        return RedirectToAction(nameof(Login)); 
+                        return RedirectToAction(nameof(Login));
                     }
                     else
                     {
@@ -99,7 +100,23 @@ namespace Proyecto_MVC.Controllers
 
                 if (response.IsSuccessStatusCode)
                 {
-                    return RedirectToAction("Index", "Home");
+                    
+                    var claims = new List<Claim>
+                    {
+                        new Claim(ClaimTypes.Name, correoElectronico)
+                        
+                    };
+
+                    var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+
+                    var authProperties = new AuthenticationProperties
+                    {
+                       
+                    };
+
+                    await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity), authProperties);
+
+                    return RedirectToAction("Index", "Home"); 
                 }
                 else if (response.StatusCode == HttpStatusCode.NotFound)
                 {
@@ -127,6 +144,13 @@ namespace Proyecto_MVC.Controllers
             return View();
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return RedirectToAction("Index", "Home");
+        }
 
 
     }

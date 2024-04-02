@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Proyecto_MVC.Models;
 using System.Diagnostics;
 
@@ -13,6 +14,7 @@ namespace Proyecto_MVC.Controllers
             _logger = logger;
         }
 
+        
         public IActionResult Index()
         {
             return View();
