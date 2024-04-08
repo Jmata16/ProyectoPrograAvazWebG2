@@ -497,3 +497,7 @@ C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-MV
 C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-MVC\obj\Debug\net6.0\Proyecto-MVC.genruntimeconfig.cache
 C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-MVC\obj\Debug\net6.0\ref\Proyecto-MVC.dll
 >>>>>>> Stashed changes
+D:\Fidelitas\Programación Avanzada en Web\Repos\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-MVC\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\Fidelitas\Programación Avanzada en Web\Repos\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-MVC\bin\Debug\net6.0\dotnet-aspnet-codegenerator-design.dll
+D:\Fidelitas\Programación Avanzada en Web\Repos\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-MVC\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\Fidelitas\Programación Avanzada en Web\Repos\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-MVC\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
