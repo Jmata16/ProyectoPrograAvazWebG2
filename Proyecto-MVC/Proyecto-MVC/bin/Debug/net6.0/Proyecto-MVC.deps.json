@@ -13,7 +13,6 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.27",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.27",
           "Microsoft.VisualStudio.Web.CodeGeneration.Core": "6.0.16",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.16",
           "ProyectoModels": "1.0.0"
         },
         "runtime": {
@@ -1345,18 +1344,6 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGeneration/6.0.16": {
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection": "6.0.1",
-          "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore": "6.0.16"
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.dll": {
-            "assemblyVersion": "6.0.16.0",
-            "fileVersion": "6.0.1623.40301"
-          }
-        }
-      },
       "Microsoft.VisualStudio.Web.CodeGeneration.Core/6.0.16": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "6.0.1",
@@ -1365,30 +1352,6 @@
         },
         "runtime": {
           "lib/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll": {
-            "assemblyVersion": "6.0.16.0",
-            "fileVersion": "6.0.1623.40301"
-          }
-        }
-      },
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design/6.0.16": {
-        "dependencies": {
-          "Microsoft.DotNet.Scaffolding.Shared": "6.0.16",
-          "Microsoft.VisualStudio.Web.CodeGenerators.Mvc": "6.0.16"
-        },
-        "runtime": {
-          "lib/net6.0/dotnet-aspnet-codegenerator-design.dll": {
-            "assemblyVersion": "6.0.16.0",
-            "fileVersion": "6.0.1623.40301"
-          }
-        }
-      },
-      "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/6.0.16": {
-        "dependencies": {
-          "Microsoft.DotNet.Scaffolding.Shared": "6.0.16",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Core": "6.0.16"
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll": {
             "assemblyVersion": "6.0.16.0",
             "fileVersion": "6.0.1623.40301"
           }
@@ -1417,18 +1380,6 @@
         },
         "runtime": {
           "lib/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll": {
-            "assemblyVersion": "6.0.16.0",
-            "fileVersion": "6.0.1623.40301"
-          }
-        }
-      },
-      "Microsoft.VisualStudio.Web.CodeGenerators.Mvc/6.0.16": {
-        "dependencies": {
-          "Microsoft.DotNet.Scaffolding.Shared": "6.0.16",
-          "Microsoft.VisualStudio.Web.CodeGeneration": "6.0.16"
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll": {
             "assemblyVersion": "6.0.16.0",
             "fileVersion": "6.0.1623.40301"
           }
@@ -3176,33 +3127,12 @@
       "path": "microsoft.visualstudio.debugger.contracts/17.2.0",
       "hashPath": "microsoft.visualstudio.debugger.contracts.17.2.0.nupkg.sha512"
     },
-    "Microsoft.VisualStudio.Web.CodeGeneration/6.0.16": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Bkk8ZEBrwrlLqgmce1sm7tlO2AKh3eTceR3JsS1YonCAJ7NKLnkHLyNaPxTgZ6TN5xgoksxzMkfyhDPiyQ6QPw==",
-      "path": "microsoft.visualstudio.web.codegeneration/6.0.16",
-      "hashPath": "microsoft.visualstudio.web.codegeneration.6.0.16.nupkg.sha512"
-    },
     "Microsoft.VisualStudio.Web.CodeGeneration.Core/6.0.16": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-ipaMs7Lugc8llq77w/qdlTIcsCuei6O/T7l1qKbiKQ+ydnfaTgskcfHW/SxwAjvaC5ijrgKMaMrnKCZC4UocDg==",
       "path": "microsoft.visualstudio.web.codegeneration.core/6.0.16",
       "hashPath": "microsoft.visualstudio.web.codegeneration.core.6.0.16.nupkg.sha512"
-    },
-    "Microsoft.VisualStudio.Web.CodeGeneration.Design/6.0.16": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-92befclpF95fZIJbmOYdQcR28ynDD6Mj2dJrUkxhe6LX26k2UN4CYRFQ22Jo5rvqYq4dZrmjw77qicCC+SVLmg==",
-      "path": "microsoft.visualstudio.web.codegeneration.design/6.0.16",
-      "hashPath": "microsoft.visualstudio.web.codegeneration.design.6.0.16.nupkg.sha512"
-    },
-    "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/6.0.16": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-xAO4veABPkd3mJtMaumMNQcLpzrCe9z76qu56m1IMeBxuXH3cCc0+JBVKyEnvM1h8qi34E+zR9SfdbDTgmXxgw==",
-      "path": "microsoft.visualstudio.web.codegeneration.entityframeworkcore/6.0.16",
-      "hashPath": "microsoft.visualstudio.web.codegeneration.entityframeworkcore.6.0.16.nupkg.sha512"
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Templating/6.0.16": {
       "type": "package",
@@ -3217,13 +3147,6 @@
       "sha512": "sha512-hBi10iGLW7dFz+c73mNyNtkTH0JqHb0qqfxU6TxlCITbzJcGSfBDnqILFh9C6WY7OY2lAVNcBIXDSwnRlWE23A==",
       "path": "microsoft.visualstudio.web.codegeneration.utils/6.0.16",
       "hashPath": "microsoft.visualstudio.web.codegeneration.utils.6.0.16.nupkg.sha512"
-    },
-    "Microsoft.VisualStudio.Web.CodeGenerators.Mvc/6.0.16": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-19xEgfg9ak2VNI7e1HAMDztQA/Lk9WtyY3Dbs0uPyqauproMpdPtjGLaOqrkqZWnnmpA0mOrG0Dgtwf9Qg+YMg==",
-      "path": "microsoft.visualstudio.web.codegenerators.mvc/6.0.16",
-      "hashPath": "microsoft.visualstudio.web.codegenerators.mvc.6.0.16.nupkg.sha512"
     },
     "Microsoft.Win32.Primitives/4.3.0": {
       "type": "package",
