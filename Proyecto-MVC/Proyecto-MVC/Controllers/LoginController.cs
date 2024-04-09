@@ -99,22 +99,25 @@ namespace Proyecto_MVC.Controllers
                 if (response.IsSuccessStatusCode)
                 {
                     
+                    var content = await response.Content.ReadAsStringAsync();
+
+                 
                     var claims = new List<Claim>
-                    {
-                        new Claim(ClaimTypes.Name, correoElectronico)
-                        
-                    };
+            {
+                new Claim(ClaimTypes.Name, correoElectronico),
+                new Claim("Rol_ID", content)
+            };
 
                     var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
 
                     var authProperties = new AuthenticationProperties
                     {
-                       
+
                     };
 
                     await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity), authProperties);
 
-                    return RedirectToAction("Index", "Home"); 
+                    return RedirectToAction("Index", "Home");
                 }
                 else if (response.StatusCode == HttpStatusCode.NotFound)
                 {
@@ -141,6 +144,7 @@ namespace Proyecto_MVC.Controllers
 
             return View();
         }
+
 
         [HttpPost]
         [ValidateAntiForgeryToken]

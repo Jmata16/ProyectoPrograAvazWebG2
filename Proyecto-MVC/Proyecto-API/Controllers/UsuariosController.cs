@@ -120,5 +120,19 @@ namespace Proyecto_API.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }
+
+        [HttpGet]
+        public ActionResult<IEnumerable<Usuarios>> GetUsuarios()
+        {
+            try
+            {
+                var usuarios = _context.Usuarios.ToList();
+                return Ok(usuarios);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
+        }
     }
 }

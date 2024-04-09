@@ -19,30 +19,25 @@ namespace Proyecto_API.Controllers
         [HttpPost]
         public IActionResult Login(string correoElectronico, string contraseña)
         {
-            
             if (string.IsNullOrWhiteSpace(correoElectronico) || string.IsNullOrWhiteSpace(contraseña))
             {
                 return BadRequest("Por favor, ingrese su correo electrónico y contraseña.");
             }
 
-            
             var usuario = _context.Usuarios.FirstOrDefault(u => u.CorreoElectronico == correoElectronico);
 
             if (usuario == null)
             {
-                
                 return NotFound("El usuario no existe.");
             }
 
-            
             if (usuario.Contraseña != contraseña)
             {
-                
                 return Unauthorized("La contraseña es incorrecta.");
             }
 
-            
-            return Ok("Inicio de sesión exitoso.");
+            // Si el inicio de sesión es exitoso, devolver el nombre del usuario
+            return Ok(usuario.Rol_ID);
         }
     }
-}
+    }
