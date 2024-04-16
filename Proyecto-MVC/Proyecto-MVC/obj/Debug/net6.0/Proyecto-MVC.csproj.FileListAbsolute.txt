@@ -246,3 +246,7 @@ D:\Fidelitas\Programación Avanzada en Web\Repos\ProyectoPrograAvazWebG2\Proyect
 D:\Fidelitas\Programación Avanzada en Web\Repos\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-MVC\obj\Debug\net6.0\Proyecto-MVC.pdb
 D:\Fidelitas\Programación Avanzada en Web\Repos\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-MVC\obj\Debug\net6.0\Proyecto-MVC.genruntimeconfig.cache
 D:\Fidelitas\Programación Avanzada en Web\Repos\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-MVC\obj\Debug\net6.0\ref\Proyecto-MVC.dll
+D:\Fidelitas\Programación Avanzada en Web\Repos\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-MVC\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\Fidelitas\Programación Avanzada en Web\Repos\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-MVC\bin\Debug\net6.0\dotnet-aspnet-codegenerator-design.dll
+D:\Fidelitas\Programación Avanzada en Web\Repos\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-MVC\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\Fidelitas\Programación Avanzada en Web\Repos\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-MVC\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll

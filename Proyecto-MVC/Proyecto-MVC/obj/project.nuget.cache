@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "v3BYwQQ8fJSiMqsQ+FKq+CEoyNUZgIJmQjjd43BGXdJ4z46pIdNXvEDI/nlY7d+j5H7EpSW9dLNQyZH4wjmyCg==",
+  "dgSpecHash": "wvdWWvAd2FnQlxqSPuZQxkx4JFj5EpCsU11Pm+g1LkBJKw4LHA7ILnte9nvG1cWeG7tN1w11sn8+cE1ZT4s01w==",
   "success": true,
   "projectFilePath": "D:\\Fidelitas\\Programación Avanzada en Web\\Repos\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\Proyecto-MVC\\Proyecto-MVC.csproj",
   "expectedPackageFiles": [
@@ -102,9 +102,13 @@
     "C:\\Users\\jdmat\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\jdmat\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\jdmat\\.nuget\\packages\\microsoft.visualstudio.debugger.contracts\\17.2.0\\microsoft.visualstudio.debugger.contracts.17.2.0.nupkg.sha512",
+    "C:\\Users\\jdmat\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\6.0.16\\microsoft.visualstudio.web.codegeneration.6.0.16.nupkg.sha512",
     "C:\\Users\\jdmat\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\6.0.16\\microsoft.visualstudio.web.codegeneration.core.6.0.16.nupkg.sha512",
+    "C:\\Users\\jdmat\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.design\\6.0.16\\microsoft.visualstudio.web.codegeneration.design.6.0.16.nupkg.sha512",
+    "C:\\Users\\jdmat\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.entityframeworkcore\\6.0.16\\microsoft.visualstudio.web.codegeneration.entityframeworkcore.6.0.16.nupkg.sha512",
     "C:\\Users\\jdmat\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.templating\\6.0.16\\microsoft.visualstudio.web.codegeneration.templating.6.0.16.nupkg.sha512",
     "C:\\Users\\jdmat\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.utils\\6.0.16\\microsoft.visualstudio.web.codegeneration.utils.6.0.16.nupkg.sha512",
+    "C:\\Users\\jdmat\\.nuget\\packages\\microsoft.visualstudio.web.codegenerators.mvc\\6.0.16\\microsoft.visualstudio.web.codegenerators.mvc.6.0.16.nupkg.sha512",
     "C:\\Users\\jdmat\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\jdmat\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\jdmat\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",

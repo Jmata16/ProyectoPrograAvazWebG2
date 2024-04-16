@@ -23,7 +23,7 @@
 <header id="header" class="site-header header-scrolled position-fixed text-black bg-light">
     <nav id="header-nav" class="navbar navbar-expand-lg px-3 mb-3">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="/home/index">
                 <img src="~/images/main-logo.png" class="logo">
             </a>
             <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,13 +41,25 @@
                 <div class="offcanvas-body">
                     <ul id="navbar" class="navbar-nav text-uppercase justify-content-end align-items-center flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link me-4 active" href="#">Inicio</a>
+                            <a class="nav-link me-4 active" href="/home/index">Inicio</a>
                         </li>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            var rolId = User.FindFirst("Rol_ID")?.Value;
+                            if (rolId == "1")
+                            {
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="adminDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Modo Admin</a>
+                                    <ul class="dropdown-menu" aria-labelledby="adminDropdown">
+                                        <li><a class="dropdown-item" href="/Admin/TablaUsuarios">Tabla de Usuarios</a></li>
+                                    </ul>
+                                </li>
+                            }
+                        }
+
+
                         <li class="nav-item">
-                            <a class="nav-link me-4" href="#">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link me-4" href="Producto/Index">Productos</a>
+                            <a class="nav-link me-4" href="/Producto/Index">Productos</a>
                         </li>
 
                         <li class="nav-item">
