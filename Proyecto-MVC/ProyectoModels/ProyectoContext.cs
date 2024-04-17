@@ -14,7 +14,9 @@ namespace ProyectyoG2.Data
         public DbSet<Rol> Rol { get; set; }
         public DbSet<Usuarios> Usuarios { get; set; }
         public DbSet<Producto> Productos { get; set; }
-  
+
+        public DbSet<UbicacionTienda> UbicacionesTiendas { get; set; }
+
 
 
 
