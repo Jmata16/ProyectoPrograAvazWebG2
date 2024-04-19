@@ -36,8 +36,7 @@ namespace Proyecto_API.Controllers
                 return Unauthorized("La contraseña es incorrecta.");
             }
 
-            // Si el inicio de sesión es exitoso, devolver el nombre del usuario
-            return Ok(usuario.Rol_ID);
+            return Ok(usuario);
         }
     }
-    }
+}

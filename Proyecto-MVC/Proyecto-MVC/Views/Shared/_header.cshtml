@@ -97,11 +97,11 @@
                                         <li class="pe-3">
                                             <div class="dropdown">
                                                 <a class="dropdown-toggle" href="#" role="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <!-- Mostrar el correo electrónico del usuario -->
-                                                    @User.Identity.Name
+                                                    Bienvenido, @User.Identity.Name
                                                 </a>
+
                                                 <ul class="dropdown-menu" aria-labelledby="userDropdown">
-                                                    <!-- Agregar opción para cerrar sesión -->
+                                                    
                                                     <form method="post" asp-controller="Login" asp-action="Logout" asp-route-returnUrl="@Url.Action("Index", "Home")">
                                                         <button type="submit" class="btn btn-link">Cerrar sesión</button>
                                                     </form>
@@ -113,7 +113,7 @@
                                     {
                                         <li class="pe-3">
                                             <a href="/Login/Login">
-                                                <!-- Mostrar el icono de usuario si no ha iniciado sesión -->
+                                               
                                                 <svg class="user">
                                                     <use xlink:href="#user"></use>
                                                 </svg>

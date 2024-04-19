@@ -34,7 +34,7 @@ namespace Proyecto_MVC.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    
+
                     var response = await RegistrarUsuarioEnAPI(usuario);
 
                     if (response.IsSuccessStatusCode)
@@ -98,17 +98,28 @@ namespace Proyecto_MVC.Controllers
 
                 if (response.IsSuccessStatusCode)
                 {
-                    
+
                     var content = await response.Content.ReadAsStringAsync();
 
-                 
+
+                    var usuario = JsonSerializer.Deserialize<Usuarios>(content);
+
+
+                    var nombre = usuario.Nombre;
+                    var correo = usuario.CorreoElectronico;
+                    var rolId = usuario.Rol_ID;
+
+                    ViewData["NombreUsuario"] = nombre;
+
+
                     var claims = new List<Claim>
-            {
-                new Claim(ClaimTypes.Name, correoElectronico),
-                new Claim("Rol_ID", content)
-            };
+{
+    new Claim(ClaimTypes.Name, usuario.Nombre),
+    new Claim("rol_ID", usuario.Rol_ID.ToString()) 
+};
 
                     var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+
 
                     var authProperties = new AuthenticationProperties
                     {
