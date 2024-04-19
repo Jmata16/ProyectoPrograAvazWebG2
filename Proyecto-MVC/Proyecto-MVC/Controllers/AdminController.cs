@@ -1,12 +1,15 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using ProyectoModels;
 using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
+
 namespace Proyecto_MVC.Controllers
 {
+    [Authorize(Policy = "RequireAdminRolID")]
     public class AdminController : Controller
     {
         private readonly IHttpClientFactory _clientFactory;
@@ -98,7 +101,7 @@ namespace Proyecto_MVC.Controllers
 
             if (response.IsSuccessStatusCode)
             {
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(TablaUsuarios));
             }
             else
             {

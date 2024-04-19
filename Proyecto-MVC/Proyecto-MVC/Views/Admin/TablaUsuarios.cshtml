@@ -102,6 +102,10 @@
         </symbol>
     </svg>
     <br />
+
+
+    <p>Tu ID de usuario es: @ViewData["UserID"]</p>
+
     @if (Model != null && Model.Any())
     {
         <div class="table-responsive">
@@ -111,7 +115,7 @@
                         <th>ID</th>
                         <th>Nombre</th>
                         <th>Correo Electrónico</th>
-                        <th>Rol ID</th>
+                        <th>Rol</th>
                         <th>Acciones</th>
                     </tr>
                 </thead>
@@ -122,7 +126,17 @@
                             <td>@usuario.ID</td>
                             <td>@usuario.Nombre</td>
                             <td>@usuario.CorreoElectronico</td>
-                            <td>@usuario.Rol_ID</td>
+                            <td>
+                                @if (usuario.Rol_ID == 1)
+                                {
+                                    <text>Admin</text>
+                                }
+                                else if (usuario.Rol_ID == 2)
+                                {
+                                    <text>Usuario</text>
+                                }
+                            </td>
+
                             <td>
                                 <a href="@Url.Action("Edit", "Admin", new { id = usuario.ID })" class="btn btn-outline-primary btn-sm">Editar</a>
                                 <form asp-action="Delete" asp-controller="Admin" method="post" class="d-inline">

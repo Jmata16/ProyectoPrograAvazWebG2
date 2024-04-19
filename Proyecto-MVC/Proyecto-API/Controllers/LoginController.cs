@@ -36,8 +36,25 @@ namespace Proyecto_API.Controllers
                 return Unauthorized("La contraseña es incorrecta.");
             }
 
-            // Si el inicio de sesión es exitoso, devolver el nombre del usuario
-            return Ok(usuario.Rol_ID);
+            return Ok(usuario);
+        }
+
+        [HttpPost("cambiar-contraseña")]
+        public IActionResult CambiarContraseña(int id, string nuevaContraseña)
+        {
+            var usuario = _context.Usuarios.FirstOrDefault(u => u.ID == id);
+
+            if (usuario == null)
+            {
+                return NotFound("El usuario no existe.");
+            }
+
+            
+
+            usuario.Contraseña = nuevaContraseña;
+            _context.SaveChanges();
+
+            return Ok("Contraseña cambiada exitosamente.");
         }
     }
-    }
+}

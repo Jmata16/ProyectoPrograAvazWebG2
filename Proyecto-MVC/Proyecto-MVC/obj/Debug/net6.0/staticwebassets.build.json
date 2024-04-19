@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4HXcCCuRKxBIcQRMn1m6QTz9/x5fCViGHt4Enc0I45A=",
+  "Hash": "OIrRs28dnUHkeCrIF1VTbGtSLDrOjIdieLOK3R/4zBA=",
   "Source": "Proyecto-MVC",
   "BasePath": "_content/Proyecto-MVC",
   "Mode": "Default",
@@ -376,6 +376,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\insta-item5.jpg"
+    },
+    {
+      "Identity": "D:\\Fidelitas\\Programación Avanzada en Web\\Repos\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\Proyecto-MVC\\wwwroot\\images\\logo.png",
+      "SourceId": "Proyecto-MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Fidelitas\\Programación Avanzada en Web\\Repos\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\Proyecto-MVC\\wwwroot\\",
+      "BasePath": "_content/Proyecto-MVC",
+      "RelativePath": "images/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo.png"
     },
     {
       "Identity": "D:\\Fidelitas\\Programación Avanzada en Web\\Repos\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\Proyecto-MVC\\wwwroot\\images\\main-logo.png",

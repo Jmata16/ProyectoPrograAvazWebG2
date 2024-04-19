@@ -34,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Login/CambiarContraseña.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQ2FtYmlhckNvbnRyYXNlw7FhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Login/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -76,6 +80,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/UbicacionesTiendasPublico/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWJpY2FjaW9uZXNUaWVuZGFzUHVibGljb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/UbicacionesTiendas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWJpY2FjaW9uZXNUaWVuZGFzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/UbicacionesTiendas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWJpY2FjaW9uZXNUaWVuZGFzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/UbicacionesTiendas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWJpY2FjaW9uZXNUaWVuZGFzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/_ViewImports.cshtml]

@@ -34,7 +34,7 @@ namespace Proyecto_MVC.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    
+
                     var response = await RegistrarUsuarioEnAPI(usuario);
 
                     if (response.IsSuccessStatusCode)
@@ -98,17 +98,33 @@ namespace Proyecto_MVC.Controllers
 
                 if (response.IsSuccessStatusCode)
                 {
-                    
+
                     var content = await response.Content.ReadAsStringAsync();
 
-                 
-                    var claims = new List<Claim>
-            {
-                new Claim(ClaimTypes.Name, correoElectronico),
-                new Claim("Rol_ID", content)
-            };
 
+                    var usuario = JsonSerializer.Deserialize<Usuarios>(content);
+
+
+                    var nombre = usuario.Nombre;
+                    var correo = usuario.CorreoElectronico;
+                    var rolId = usuario.Rol_ID;
+
+                    var id = usuario.ID;
+
+                    ViewData["RolID"] = rolId;
+                    ViewData["UserID"] = id;
+
+
+                    var claims = new List<Claim>
+                     {
+                          new Claim(ClaimTypes.Name, usuario.Nombre),
+                        new Claim(ClaimTypes.NameIdentifier, id.ToString()),
+                          new Claim("rol_ID", usuario.Rol_ID.ToString())
+
+                     };
                     var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+
+                    
 
                     var authProperties = new AuthenticationProperties
                     {
@@ -153,6 +169,61 @@ namespace Proyecto_MVC.Controllers
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             return RedirectToAction("Index", "Home");
         }
+
+        public IActionResult CambiarContraseña()
+        {
+            var id = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (id != null)
+            {
+                ViewData["UserID"] = id;
+                return View();
+            }
+            else
+            {
+                
+                return RedirectToAction("Index", "Home");
+            }
+        }
+
+
+
+        [HttpPost]
+[ValidateAntiForgeryToken]
+public async Task<IActionResult> CambiarContraseña(int id, string nuevaContraseña)
+{
+    try
+    {
+        var httpClient = _httpClientFactory.CreateClient();
+        var url = $"https://localhost:7076/api/Login/cambiar-contraseña?id={id}&nuevaContraseña={nuevaContraseña}";
+
+        var response = await httpClient.PostAsync(url, null);
+
+        if (response.IsSuccessStatusCode)
+        {
+            TempData["SuccessMessage"] = "Contraseña cambiada exitosamente.";
+            return RedirectToAction("Index", "Home");
+        }
+        else if (response.StatusCode == HttpStatusCode.NotFound)
+        {
+            TempData["ErrorMessage"] = "El usuario no existe.";
+        }
+        else
+        {
+            TempData["ErrorMessage"] = "Error al cambiar la contraseña.";
+        }
+    }
+    catch (HttpRequestException ex)
+    {
+        TempData["ErrorMessage"] = $"Error de comunicación con el servidor: {ex.Message}";
+    }
+    catch (Exception ex)
+    {
+        TempData["ErrorMessage"] = $"Error inesperado: {ex.Message}";
+    }
+
+    return RedirectToAction("Index", "Home");
+}
+
 
 
     }
