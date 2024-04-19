@@ -73,6 +73,10 @@
       "PackagePath": "staticwebassets\\images\\insta-item5.jpg"
     },
     {
+      "Id": "D:\\Fidelitas\\Programación Avanzada en Web\\Repos\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\Proyecto-MVC\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
       "Id": "D:\\Fidelitas\\Programación Avanzada en Web\\Repos\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\Proyecto-MVC\\wwwroot\\images\\main-logo.png",
       "PackagePath": "staticwebassets\\images\\main-logo.png"
     },

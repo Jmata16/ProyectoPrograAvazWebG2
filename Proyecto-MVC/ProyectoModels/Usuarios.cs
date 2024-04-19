@@ -10,6 +10,7 @@ namespace ProyectoModels
 {
     public class Usuarios
     {
+
         [JsonPropertyName("id")]
         [Key]
         public int ID { get; set; }

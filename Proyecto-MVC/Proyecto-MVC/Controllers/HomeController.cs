@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Proyecto_MVC.Models;
 using System.Diagnostics;
+using System.Security.Claims;
 
 namespace Proyecto_MVC.Controllers
 {
@@ -17,6 +18,8 @@ namespace Proyecto_MVC.Controllers
         
         public IActionResult Index()
         {
+            var usuarioId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            ViewData["UserID"] = usuarioId;
             return View();
         }
 
