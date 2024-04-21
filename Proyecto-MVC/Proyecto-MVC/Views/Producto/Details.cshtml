@@ -1,27 +1,56 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Detalles del Producto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .product-details {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+            .product-details img {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 20px;
+                border-radius: 5px;
+            }
+
+        .back-link {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
 
-    <div>
-        <h4>Detalles del Producto</h4>
-        <hr />
-        <dl class="row">
-            <dt class="col-sm-2">Nombre</dt>
-            <dd class="col-sm-10">@Model.Nombre</dd>
-            <dt class="col-sm-2">Precio</dt>
-            <dd class="col-sm-10">@Model.Precio</dd>
-            <dt class="col-sm-2">Descripción</dt>
-            <dd class="col-sm-10">@Model.Descripcion</dd>
-        </dl>
-    </div>
-
-    <div>
-        <a asp-action="Index">Volver al Listado</a>
+    <div class="container">
+        <div class="product-details">
+            <h4 class="text-center">Detalles del Producto</h4>
+            <hr>
+            <div class="text-center">
+                <img src="~/images/cart-item1.jpg" alt="Producto" class="img-fluid">
+            </div>
+            <dl class="row">
+                <dt class="col-sm-3">Nombre:</dt>
+                <dd class="col-sm-9">@Model.Nombre</dd>
+                <dt class="col-sm-3">Precio:</dt>
+                <dd class="col-sm-9">@Model.Precio</dd>
+                <dt class="col-sm-3">Descripción:</dt>
+                <dd class="col-sm-9">@Model.Descripcion</dd>
+            </dl>
+            <div class="text-center back-link">
+                <a href="/Producto/Index" class="btn btn-primary">Volver al Listado</a>
+            </div>
+        </div>
     </div>
 
 </body>
 </html>
+

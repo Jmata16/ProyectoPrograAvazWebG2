@@ -23,14 +23,21 @@ namespace Proyecto_MVC.Controllers
         public async Task<IActionResult> Index()
         {
             var productos = await _context.Productos.ToListAsync();
+            if (productos == null)
+            {
+                return NotFound();
+            }
             return View(productos);
         }
+
 
         // GET: Producto/Create
         public IActionResult Create()
         {
             return View();
         }
+
+        
 
         // POST: Producto/Create
         [HttpPost]
