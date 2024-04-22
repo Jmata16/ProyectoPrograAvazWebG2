@@ -1,0 +1,80 @@
+﻿@model List<ProyectoModels.Carrito>
+
+@{
+    ViewData["Title"] = "Productos en el Carrito";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ministore - Productos en el Carrito</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="~/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/css/style.css">
+</head>
+<body>
+    @Html.Partial("_header")
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center">
+                <h1>Productos en el Carrito</h1>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="container">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <img src="~/images/iphoneproduct.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">@item.Producto.Nombre</h5>
+                            <p class="card-text">@item.Producto.Descripcion</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Precio: $@item.Precio</li>
+                        </ul>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <form asp-action="ClearCart" asp-controller="Carrito" method="post">
+                    <button type="submit" class="btn btn-danger">Limpiar Carrito</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <!-- Botón de Pagar -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <a href="@Url.Action("Pago", "Pago")" class="btn btn-success">Pagar</a>
+            </div>
+        </div>
+    </div>
+
+    <br />
+
+    @Html.Partial("_footer")
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="~/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="~/js/plugins.js"></script>
+    <script type="text/javascript" src="~/js/script.js"></script>
+</body>
+</html>

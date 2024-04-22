@@ -9,103 +9,115 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Proyecto_MVC
 build_property.RootNamespace = Proyecto_MVC
-build_property.ProjectDir = D:\Fidelitas\Programación Avanzada en Web\Repos\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-MVC\
+build_property.ProjectDir = C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-MVC\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Fidelitas\Programación Avanzada en Web\Repos\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-MVC
+build_property.MSBuildProjectDirectory = C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-MVC
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Admin/Edit.cshtml]
+[C:/Users/maric/Documents/GitHub/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Admin/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Admin/TablaUsuarios.cshtml]
+[C:/Users/maric/Documents/GitHub/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Admin/TablaUsuarios.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVGFibGFVc3Vhcmlvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Home/Index.cshtml]
+[C:/Users/maric/Documents/GitHub/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Carrito/AddToCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fycml0b1xBZGRUb0NhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maric/Documents/GitHub/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Carrito/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fycml0b1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maric/Documents/GitHub/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Home/Privacy.cshtml]
+[C:/Users/maric/Documents/GitHub/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Login/CambiarContraseña.cshtml]
+[C:/Users/maric/Documents/GitHub/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Login/CambiarContraseña.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQ2FtYmlhckNvbnRyYXNlw7FhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Login/Login.cshtml]
+[C:/Users/maric/Documents/GitHub/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Login/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Login/Registro.cshtml]
+[C:/Users/maric/Documents/GitHub/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Login/Registro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmVnaXN0cm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Producto/Create.cshtml]
+[C:/Users/maric/Documents/GitHub/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Pago/Pago.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnb1xQYWdvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maric/Documents/GitHub/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Producto/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Producto/Delete.cshtml]
+[C:/Users/maric/Documents/GitHub/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Producto/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Producto/Details.cshtml]
+[C:/Users/maric/Documents/GitHub/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Producto/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Producto/Edit.cshtml]
+[C:/Users/maric/Documents/GitHub/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Producto/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Producto/Index.cshtml]
+[C:/Users/maric/Documents/GitHub/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Producto/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Shared/Error.cshtml]
+[C:/Users/maric/Documents/GitHub/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Shared/_footer.cshtml]
+[C:/Users/maric/Documents/GitHub/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Shared/_footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9mb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Shared/_header.cshtml]
+[C:/Users/maric/Documents/GitHub/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Shared/_header.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9oZWFkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/maric/Documents/GitHub/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/UbicacionesTiendasPublico/Index.cshtml]
+[C:/Users/maric/Documents/GitHub/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/UbicacionesTiendasPublico/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWJpY2FjaW9uZXNUaWVuZGFzUHVibGljb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/UbicacionesTiendas/Create.cshtml]
+[C:/Users/maric/Documents/GitHub/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/UbicacionesTiendas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWJpY2FjaW9uZXNUaWVuZGFzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/UbicacionesTiendas/Edit.cshtml]
+[C:/Users/maric/Documents/GitHub/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/UbicacionesTiendas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWJpY2FjaW9uZXNUaWVuZGFzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/UbicacionesTiendas/Index.cshtml]
+[C:/Users/maric/Documents/GitHub/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/UbicacionesTiendas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWJpY2FjaW9uZXNUaWVuZGFzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/_ViewImports.cshtml]
+[C:/Users/maric/Documents/GitHub/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/_ViewStart.cshtml]
+[C:/Users/maric/Documents/GitHub/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Fidelitas/Programación Avanzada en Web/Repos/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Shared/_Layout.cshtml]
+[C:/Users/maric/Documents/GitHub/ProyectoPrograAvazWebG2/Proyecto-MVC/Proyecto-MVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-dg1t2bk70c

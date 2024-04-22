@@ -25,13 +25,6 @@ namespace ProyectoModels
         [Required(ErrorMessage = "Favor ingresar el precio del producto")]
         public decimal Precio { get; set; }
 
-        //[Required(ErrorMessage = "Favor ingresar la categoria del producto")]
-        //[StringLength(50)]
-        //public string Categoria { get; set; }
-        
-        //[Required(ErrorMessage = "Favor ingrese la marca del producto")]
-        //[StringLength(50)]
-        //public string Marca { get; set; }
 
 
     }

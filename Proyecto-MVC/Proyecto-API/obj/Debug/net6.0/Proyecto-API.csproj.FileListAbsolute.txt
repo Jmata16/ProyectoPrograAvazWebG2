@@ -69,6 +69,9 @@ D:\Fidelitas\Programación Avanzada en Web\Repos\ProyectoPrograAvazWebG2\Proyect
 D:\Fidelitas\Programación Avanzada en Web\Repos\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 D:\Fidelitas\Programación Avanzada en Web\Repos\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-API\bin\Debug\net6.0\ProyectoModels.dll
 D:\Fidelitas\Programación Avanzada en Web\Repos\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-API\bin\Debug\net6.0\ProyectoModels.pdb
+D:\Fidelitas\Programación Avanzada en Web\Repos\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-API\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+D:\Fidelitas\Programación Avanzada en Web\Repos\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-API\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Fidelitas\Programación Avanzada en Web\Repos\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-API\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
 C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-API\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-API\bin\Debug\net6.0\appsettings.json
 C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-API\bin\Debug\net6.0\Proyecto-API.exe
@@ -77,6 +80,7 @@ C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-AP
 C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-API\bin\Debug\net6.0\Proyecto-API.dll
 C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-API\bin\Debug\net6.0\Proyecto-API.pdb
 C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-API\bin\Debug\net6.0\Humanizer.dll
+C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-API\bin\Debug\net6.0\System.Net.Http.Formatting.dll
 C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-API\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -93,6 +97,8 @@ C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-AP
 C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-API\bin\Debug\net6.0\Microsoft.OpenApi.dll
 C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-API\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-API\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-API\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
 C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -140,6 +146,3 @@ C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-AP
 C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-API\obj\Debug\net6.0\Proyecto-API.pdb
 C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-API\obj\Debug\net6.0\Proyecto-API.genruntimeconfig.cache
 C:\Users\maric\Documents\GitHub\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-API\obj\Debug\net6.0\ref\Proyecto-API.dll
-D:\Fidelitas\Programación Avanzada en Web\Repos\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-API\bin\Debug\net6.0\System.Net.Http.Formatting.dll
-D:\Fidelitas\Programación Avanzada en Web\Repos\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-API\bin\Debug\net6.0\Newtonsoft.Json.dll
-D:\Fidelitas\Programación Avanzada en Web\Repos\ProyectoPrograAvazWebG2\Proyecto-MVC\Proyecto-API\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

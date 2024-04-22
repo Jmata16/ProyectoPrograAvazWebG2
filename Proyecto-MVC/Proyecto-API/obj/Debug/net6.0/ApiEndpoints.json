@@ -21,6 +21,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Proyecto_API.Controllers.LoginController",
+    "Method": "CambiarContrase\u00F1a",
+    "RelativePath": "api/Login/cambiar-contrase\u00F1a",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "nuevaContrase\u00F1a",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Proyecto_API.Controllers.ProductoController",
     "Method": "Product",
     "RelativePath": "api/Producto",
@@ -47,6 +68,115 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ProyectoG2.Controllers.UbicacionesTiendasController",
+    "Method": "GetUbicacionesTiendas",
+    "RelativePath": "api/UbicacionesTiendas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProyectoModels.UbicacionTienda, ProyectoModels, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProyectoG2.Controllers.UbicacionesTiendasController",
+    "Method": "PostUbicacionTienda",
+    "RelativePath": "api/UbicacionesTiendas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ubicacionTienda",
+        "Type": "ProyectoModels.UbicacionTienda",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProyectoModels.UbicacionTienda",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProyectoG2.Controllers.UbicacionesTiendasController",
+    "Method": "GetUbicacionTienda",
+    "RelativePath": "api/UbicacionesTiendas/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProyectoModels.UbicacionTienda",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProyectoG2.Controllers.UbicacionesTiendasController",
+    "Method": "PutUbicacionTienda",
+    "RelativePath": "api/UbicacionesTiendas/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ubicacionTienda",
+        "Type": "ProyectoModels.UbicacionTienda",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProyectoG2.Controllers.UbicacionesTiendasController",
+    "Method": "DeleteUbicacionTienda",
+    "RelativePath": "api/UbicacionesTiendas/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Proyecto_API.Controllers.UsuariosController",
     "Method": "PostUsuario",
     "RelativePath": "api/Usuarios",
@@ -61,6 +191,26 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Proyecto_API.Controllers.UsuariosController",
+    "Method": "GetUsuarios",
+    "RelativePath": "api/Usuarios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProyectoModels.Usuarios, ProyectoModels, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "Proyecto_API.Controllers.UsuariosController",
