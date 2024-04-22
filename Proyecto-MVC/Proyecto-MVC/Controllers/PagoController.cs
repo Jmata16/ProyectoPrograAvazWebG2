@@ -49,8 +49,14 @@ namespace Proyecto_MVC.Controllers
             // Mostrar un mensaje de confirmación al usuario
             TempData["MensajePago"] = "¡Gracias por su compra! El pago se ha completado correctamente.";
 
-            return RedirectToAction("Index", "Home"); // Redirigir a la página de inicio u otra página relevante
+            return RedirectToAction("Pagado"); // Redirigir a la página de inicio u otra página relevante
         }
 
+
+        public IActionResult Pagado()
+        {
+
+            return View();
+        }
     }
 }

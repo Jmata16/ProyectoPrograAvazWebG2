@@ -206,9 +206,14 @@
                                     </a>
 
                                     <div class="cart-concern position-absolute">
-                                        <div class="cart-button d-flex">
-                                            <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                                        </div>
+                                        <form asp-action="AgregarAlCarrito" asp-controller="Carrito" method="post">
+                                            <input type="hidden" name="productoId" value="@producto.ID" />
+                                            <button type="submit" class="btn btn-medium btn-black">
+                                                Add to Cart
+                                                <svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg>
+                                            </button>
+                                        </form>
+
                                     </div>
                                     <div class="card-detail pt-2">
                                         <h3 class="card-title text-uppercase">

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BtuSbuGoEy/QOQEU1jRqRVa6VThhG4vANrIxgcKgYMQ=",
+  "Hash": "Tqut1H+x4t3OWRChyVH5p4MQmylCAT006moPAuEzEh0=",
   "Source": "Proyecto-MVC",
   "BasePath": "_content/Proyecto-MVC",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Login.css"
+    },
+    {
+      "Identity": "D:\\Fidelitas\\Programación Avanzada en Web\\Repos\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\Proyecto-MVC\\wwwroot\\css\\pagado.css",
+      "SourceId": "Proyecto-MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Fidelitas\\Programación Avanzada en Web\\Repos\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\Proyecto-MVC\\wwwroot\\",
+      "BasePath": "_content/Proyecto-MVC",
+      "RelativePath": "css/pagado.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\pagado.css"
     },
     {
       "Identity": "D:\\Fidelitas\\Programación Avanzada en Web\\Repos\\ProyectoPrograAvazWebG2\\Proyecto-MVC\\Proyecto-MVC\\wwwroot\\css\\site.css",
