@@ -1,4 +1,6 @@
-﻿@{
+﻿@model List<ProyectoModels.Producto>
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -180,235 +182,64 @@
                 </div>
             </div>
         </div>
-    </section> 
+    </section>
 
- <section id="mobile-products" class="product-store position-relative padding-large no-padding-top">
+    <section id="mobile-products" class="product-store position-relative padding-large no-padding-top">
         <div class="container">
             <div class="row">
                 <div class="display-header d-flex justify-content-between pb-3">
-                    <h2 class="display-7 text-dark text-uppercase">Smartphones</h2>
+                    <h2 class="display-7 text-dark text-uppercase">Productos</h2>
                     <div class="btn-right">
-                        <a href="shop.html" class="btn btn-medium btn-normal text-uppercase">Ir a Smartphones</a>
+                        <a href="/Producto/Index" class="btn btn-medium btn-normal text-uppercase">Ir a Productos</a>
                     </div>
                 </div>
                 <div class="swiper product-swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="product-card position-relative">
-                                <div class="image-holder">
-                                    <img src="images/product-item1.jpg" alt="product-item" class="img-fluid">
-                                </div>
-                                <div class="cart-concern position-absolute">
-                                    <div class="cart-button d-flex">
-                                        <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
+                        @foreach (var producto in Model)
+                        {
+                            <div class="swiper-slide">
+                                <div class="product-card position-relative">
+                                    <a asp-controller="Producto" asp-action="Details" asp-route-id="@producto.ID">
+                                        <div class="image-holder">
+                                            <img src="@producto.ImagenURL" alt="product-item" class="img-fluid">
+                                        </div>
+                                    </a>
+
+                                    <div class="cart-concern position-absolute">
+                                        <div class="cart-button d-flex">
+                                            <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
+                                        </div>
+                                    </div>
+                                    <div class="card-detail pt-2">
+                                        <h3 class="card-title text-uppercase">
+                                            <a href="#">@producto.Nombre</a>
+                                        </h3>
+                                        <span class="item-price text-primary">$@producto.Precio</span>
                                     </div>
                                 </div>
-                                <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                                    <h3 class="card-title text-uppercase">
-                                        <a href="#">Iphone 10</a>
-                                    </h3>
-                                    <span class="item-price text-primary">$980</span>
-                                </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product-card position-relative">
-                                <div class="image-holder">
-                                    <img src="images/product-item2.jpg" alt="product-item" class="img-fluid">
-                                </div>
-                                <div class="cart-concern position-absolute">
-                                    <div class="cart-button d-flex">
-                                        <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                                    </div>
-                                </div>
-                                <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                                    <h3 class="card-title text-uppercase">
-                                        <a href="#">Iphone 11</a>
-                                    </h3>
-                                    <span class="item-price text-primary">$1100</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product-card position-relative">
-                                <div class="image-holder">
-                                    <img src="images/product-item3.jpg" alt="product-item" class="img-fluid">
-                                </div>
-                                <div class="cart-concern position-absolute">
-                                    <div class="cart-button d-flex">
-                                        <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                                    </div>
-                                </div>
-                                <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                                    <h3 class="card-title text-uppercase">
-                                        <a href="#">Iphone 8</a>
-                                    </h3>
-                                    <span class="item-price text-primary">$780</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product-card position-relative">
-                                <div class="image-holder">
-                                    <img src="images/product-item4.jpg" alt="product-item" class="img-fluid">
-                                </div>
-                                <div class="cart-concern position-absolute">
-                                    <div class="cart-button d-flex">
-                                        <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                                    </div>
-                                </div>
-                                <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                                    <h3 class="card-title text-uppercase">
-                                        <a href="#">Iphone 13</a>
-                                    </h3>
-                                    <span class="item-price text-primary">$1500</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product-card position-relative">
-                                <div class="image-holder">
-                                    <img src="images/product-item5.jpg" alt="product-item" class="img-fluid">
-                                </div>
-                                <div class="cart-concern position-absolute">
-                                    <div class="cart-button d-flex">
-                                        <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                                    </div>
-                                </div>
-                                <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                                    <h3 class="card-title text-uppercase">
-                                        <a href="#">Iphone 12</a>
-                                    </h3>
-                                    <span class="item-price text-primary">$1300</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-pagination position-absolute text-center"></div>
-    </section> 
-    <section id="smart-watches" class="product-store padding-large position-relative">
-        <div class="container">
-            <div class="row">
-                <div class="display-header d-flex justify-content-between pb-3">
-                    <h2 class="display-7 text-dark text-uppercase">Relojes inteligentes</h2>
-                    <div class="btn-right">
-                        <a href="shop.html" class="btn btn-medium btn-normal text-uppercase">Ir a Relojes inteligentes</a>
-                    </div>
-                </div>
-                <div class="swiper product-watch-swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="product-card position-relative">
-                                <div class="image-holder">
-                                    <img src="images/product-item6.jpg" alt="product-item" class="img-fluid">
-                                </div>
-                                <div class="cart-concern position-absolute">
-                                    <div class="cart-button d-flex">
-                                        <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                                    </div>
-                                </div>
-                                <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                                    <h3 class="card-title text-uppercase">
-                                        <a href="#">Pink watch</a>
-                                    </h3>
-                                    <span class="item-price text-primary">$870</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product-card position-relative">
-                                <div class="image-holder">
-                                    <img src="images/product-item7.jpg" alt="product-item" class="img-fluid">
-                                </div>
-                                <div class="cart-concern position-absolute">
-                                    <div class="cart-button d-flex">
-                                        <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                                    </div>
-                                </div>
-                                <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                                    <h3 class="card-title text-uppercase">
-                                        <a href="#">Heavy watch</a>
-                                    </h3>
-                                    <span class="item-price text-primary">$680</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product-card position-relative">
-                                <div class="image-holder">
-                                    <img src="images/product-item8.jpg" alt="product-item" class="img-fluid">
-                                </div>
-                                <div class="cart-concern position-absolute">
-                                    <div class="cart-button d-flex">
-                                        <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                                    </div>
-                                </div>
-                                <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                                    <h3 class="card-title text-uppercase">
-                                        <a href="#">spotted watch</a>
-                                    </h3>
-                                    <span class="item-price text-primary">$750</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product-card position-relative">
-                                <div class="image-holder">
-                                    <img src="images/product-item9.jpg" alt="product-item" class="img-fluid">
-                                </div>
-                                <div class="cart-concern position-absolute">
-                                    <div class="cart-button d-flex">
-                                        <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                                    </div>
-                                </div>
-                                <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                                    <h3 class="card-title text-uppercase">
-                                        <a href="#">black watch</a>
-                                    </h3>
-                                    <span class="item-price text-primary">$650</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product-card position-relative">
-                                <div class="image-holder">
-                                    <img src="images/product-item10.jpg" alt="product-item" class="img-fluid">
-                                </div>
-                                <div class="cart-concern position-absolute">
-                                    <div class="cart-button d-flex">
-                                        <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                                    </div>
-                                </div>
-                                <div class="card-detail d-flex justify-content-between pt-3">
-                                    <h3 class="card-title text-uppercase">
-                                        <a href="#">black watch</a>
-                                    </h3>
-                                    <span class="item-price text-primary">$750</span>
-                                </div>
-                            </div>
-                        </div>
+                        }
                     </div>
                 </div>
             </div>
         </div>
         <div class="swiper-pagination position-absolute text-center"></div>
     </section>
-    <section id="yearly-sale" class="bg-light-blue overflow-hidden mt-5 padding-xlarge" style="background-image: url('images/single-image1.png');background-position: right; background-repeat: no-repeat;">
+
+    <div class="bg-black">
+        <section id="yearly-sale" class=" overflow-hidden  padding-xlarge" style="margin-right:400px; background-image: url('https://img.xfinitymobile.com/image/fetch/e_trim/w_300,h_420,c_fit,f_auto,q_auto,fl_lossy/https%3A%2F%2Fimg.xfinitymobile.com%2Fimage%2Fupload%2Fv1694556630%2Fclient%2Fcatalog%2Fdevices%2Fapple%2FApple_iPhone-15-Pro-Max_Blue-Titanium_HERO.png');background-position: right; background-repeat: no-repeat;">
         <div class="row d-flex flex-wrap align-items-center">
             <div class="col-md-6 col-sm-12">
                 <div class="text-content offset-4 padding-medium">
-                    <h3>20% off</h3>
-                    <h2 class="display-6 pb-5 text-uppercase text-dark">Oferta en tu primer Compra</h2>
-                    <a href="shop.html" class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Ofertas</a>
+                        <h3 class="text-light">Iphone 15 Pro</h3>
+                    <h2 class="text-light display-6 pb-5">Nuestro Producto Mas Vendido</h2>
                 </div>
             </div>
             <div class="col-md-6 col-sm-12">
             </div>
         </div>
-    </section> 
+        </section>
+    </div>
     @Html.Partial("_footer")
      <script src="js/jquery-1.11.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>

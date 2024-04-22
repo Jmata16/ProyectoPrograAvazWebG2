@@ -1,11 +1,6 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Detalles del Producto</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         .product-details {
             max-width: 600px;
@@ -28,14 +23,24 @@
         }
     </style>
 </head>
-<body>
 
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+    @Html.Partial("_header")
+
+    <br />
+    <br />
+
+    <br />
+    <br />
+    <br />
+    <br />
     <div class="container">
         <div class="product-details">
             <h4 class="text-center">Detalles del Producto</h4>
             <hr>
             <div class="text-center">
-                <img src="~/images/cart-item1.jpg" alt="Producto" class="img-fluid">
+                <img src="@Model.ImagenURL" alt="Producto" class="img-fluid" style="width: auto; height: 380px;">
+
             </div>
             <dl class="row">
                 <dt class="col-sm-3">Nombre:</dt>
@@ -45,12 +50,29 @@
                 <dt class="col-sm-3">Descripción:</dt>
                 <dd class="col-sm-9">@Model.Descripcion</dd>
             </dl>
+            <div class="card-body text-center">
+                <form asp-action="AgregarAlCarrito" asp-controller="Carrito" method="post">
+                    <input type="hidden" name="productoId" value="@Model.ID" />
+                    <button type="submit" class="btn btn-primary">Agregar al carrito</button>
+                </form>
+            </div>
             <div class="text-center back-link">
-                <a href="/Producto/Index" class="btn btn-primary">Volver al Listado</a>
+                <a href="/Producto/Index" class="btn btn-primary">Volver</a>
             </div>
         </div>
     </div>
+    <br />
+        <br/>
 
+        <br/>
+
+
+
+    @Html.Partial("_footer")
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="~/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="~/js/plugins.js"></script>
+    <script type="text/javascript" src="~/js/script.js"></script>
 </body>
 </html>
-

@@ -22,6 +22,9 @@ namespace ProyectoModels
         [Required(ErrorMessage = "Favor ingrese la descripcion del producto")]
         public string Descripcion { get; set; }
 
+
+        public string ImagenURL { get; set; }
+
         [Required(ErrorMessage = "Favor ingresar el precio del producto")]
         public decimal Precio { get; set; }
 

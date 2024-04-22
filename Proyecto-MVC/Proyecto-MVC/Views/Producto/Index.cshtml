@@ -52,7 +52,7 @@
             </div>
 
             <div class="col-md-6 text-center">
-                <h1>Listado de Productos</h1>
+                <h1>Nuestros Productos</h1>
             </div>
             <div class="col-md-3"></div>
         </div>
@@ -65,7 +65,10 @@
             {
                 <div class="col-md-4">
                     <div class="card mb-3">
-                        <img src="~/images/iphoneproduct.jpg" class="card-img-top">
+                        <a asp-action="Details" asp-route-id="@producto.ID">
+                            <img src="@producto.ImagenURL" class="card-img-top" />
+                        </a>
+
                         <div class="card-body">
                             <h5 class="card-title">@producto.Nombre</h5>
                             <p class="card-text">@producto.Descripcion</p>
@@ -73,7 +76,30 @@
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">Precio: $@producto.Precio</li>
                         </ul>
-                        <br />
+                        <div class="card-body text-center">
+
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                var rolId = User.FindFirst("Rol_ID")?.Value;
+                                if (rolId == "1")
+                                {
+                                    <div class="btn-group" role="group" aria-label="Acciones">
+                                        <a asp-action="Edit" asp-route-id="@producto.ID" class="btn btn-outline-primary">
+                                            <i class="fas fa-edit"></i>
+                                        </a>
+                                        <a asp-action="Details" asp-route-id="@producto.ID" class="btn btn-outline-info">
+                                            <i class="fas fa-info-circle"></i>
+                                        </a>
+                                        <form asp-action="Delete" asp-route-id="@producto.ID" method="post" onsubmit="return confirm('¿Estás seguro de eliminar este producto?');" class="d-inline">
+                                            <button type="submit" class="btn btn-outline-danger">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                }
+                            }
+
+                        </div>
                         <div class="card-body text-center">
                             <form asp-action="AgregarAlCarrito" asp-controller="Carrito" method="post">
                                 <input type="hidden" name="productoId" value="@producto.ID" />
@@ -83,11 +109,9 @@
                     </div>
                 </div>
             }
+
         </div>
     </div>
-
-    
-
     @Html.Partial("_footer")
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>

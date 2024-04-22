@@ -10,6 +10,7 @@ using ProyectyoG2.Data;
 
 namespace Proyecto_MVC.Controllers
 {
+
     public class ProductoController : Controller
     {
         private readonly ProyectoContext _context;
